@@ -1,0 +1,25 @@
+.header-container {
+  height: 100%;
+  width: 100%;
+  /* position: relative; */
+
+  /* position: center center; */
+  background-image: url("../../../images/slide03.jpg");
+  background-size: cover;
+  /* background-color: aliceblue; */
+  opacity: 1;
+  visibility: inherit;
+  z-index: 20;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* .header-container::after {
+  height: 700px;
+  content: " ";
+  position: absolute;
+  top: 0;
+  width: 27%;
+  right: 0;
+  background-color: #3a4256;
+  z-index: -50;
+} */
