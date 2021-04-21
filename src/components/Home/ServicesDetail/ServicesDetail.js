@@ -1,26 +1,27 @@
 import React from "react";
 import { useHistory } from "react-router";
-
+import './ServicesDetail.css'
 const ServicesDetail = ({ service }) => {
   const history = useHistory();
   const handleBuyService = () => {
     history.push(`/order/${service.title}`);
   };
+  const serviceDetailStyle = {
+    textAlign: 'center',
+    borderRadius: '10px',
+    border:'1px solid lightgrey',
+    //   paddingLeft:'20px',
+    //   paddingTop:'20px',
+    //   cursor:'pointer',
+    boxShadow: '20px 20px 20px grey'
+  }
   return (
-    // <div className="col-md-4 text-center">
-    //   <img style={{ height: "60%", width: "90%" }} src={service.img} alt="" />
-    //   <h2 className="mt-3 mb-3">{service.name}</h2>
-    //   <p className="text-secondary">
-    //     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis,
-    //     assumenda!
-    //   </p>
-    // </div>
     <div className="col-md-4 col-sm-12">
-      <div className="service-item my-4" onClick={handleBuyService}>
+      <div style={serviceDetailStyle} className="service-item my-4" onClick={handleBuyService}>
         {service.image ? (
           <img
-            style={{ height: "60%", width: "90%" }}
-            src={`data:image/png;base64,${service.image.img}`}
+            style={{ height: "180px", width: "90%", marginTop: "15px" }}
+            src={`data:image/png;base64,${service.image.img}`} alt=''
           />
         ) : (
           <img
@@ -31,7 +32,7 @@ const ServicesDetail = ({ service }) => {
           />
         )}
         <h5 className="my-4">{service.title}</h5>
-        <p style={{ color: "#707070" }}>{service.description}</p>
+        <p style={{ color: "#707070", padding: '15px',textAlign: 'justify'}}>{service.description}</p>
       </div>
     </div>
   );

@@ -35,7 +35,7 @@ const Login = () => {
   const storeAuthToken = () => {
     firebase.auth().currentUser.getIdToken(/* forceRefresh */ true)
       .then(function (idToken) {
-        sessionStorage.setItem('token', idToken);
+        // sessionStorage.setItem('token', idToken);
         history.replace(from);
       }).catch(function (error) {
         // Handle error
@@ -44,26 +44,21 @@ const Login = () => {
 
   return (
     <section>
-      <div class="container">                                
-                {/* <div class="head-logo my-5">
-                    <Link to="/"><img src={logo} alt=""/></Link>
-                </div> */}
-
-                <div class="row">
-                    <div class="col-md-3">
+      <div className="container">                                
+                <div className="row">
+                    <div className="col-md-3">
 
                     </div>
-
-                    <div class="col-md-6">
-                        <div class="login-form">
-                            <h3 class="mb-3">Login With</h3>
-                            <div class="login-alternative">
-                                <button onClick={handleGoogleSignIn}><img src={google} alt=""/>Continue with Google</button>
+                    <div className="col-md-6">
+                        <div className="login-form">
+                            <h3 className="mb-3">Login With</h3>
+                            <div className="login-alternative">
+                                <button className='btn btn-secondary' onClick={handleGoogleSignIn}><img src={google} alt=""/> Continue with Google</button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div className="col-md-3">
 
                     </div>
                 </div>

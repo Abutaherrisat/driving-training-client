@@ -11,6 +11,7 @@ const ServiceDetails = () => {
         fetch('https://sleepy-oasis-89562.herokuapp.com/orders')
         .then(res => res.json())
         .then(result => {
+            console.log(result);
             setDetails(result)
         })
     }, [])
@@ -28,7 +29,7 @@ const ServiceDetails = () => {
                         <th className="text-secondary" scope="col">Name</th>
                         <th className="text-secondary" scope="col">Email ID</th>
                         <th className="text-secondary" scope="col">Service</th>
-                        <th className="text-secondary w-25" scope="col">Project Details</th>
+                        <th className="text-secondary w-25" scope="col">Order Details</th>
                         <th className="text-secondary" scope="col">Status</th>
                         </tr>
                     </thead>

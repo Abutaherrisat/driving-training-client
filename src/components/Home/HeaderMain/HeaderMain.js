@@ -14,9 +14,6 @@ const HeaderMain = () => {
         </p>
         <button className="btn btn-primary">GET APPOINMENT</button>
       </div>
-      <div className="col-md-6">
-        {/* <img src={manDriving} alt="" className="img-fluid" /> */}
-      </div>
     </main>
   );
 };

@@ -15,12 +15,7 @@ const Services = () => {
       <div className="text-center">
         <h1 style={{ color: "#1cc7c1" }}>OUR SERVICES</h1>
         <h2>
-          <span>
-            <Link style={{ color: "#3a4256" }} to="/order/:`${name}`">
-              Services
-            </Link>
-          </span>{" "}
-          We Provide
+          <span className='text-dark'>Services</span> We Provide
         </h2>
       </div>
       <div className="d-flex justify-content-center">

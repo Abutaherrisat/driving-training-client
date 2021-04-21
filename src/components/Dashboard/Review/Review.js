@@ -70,7 +70,7 @@ const Review = () => {
                             <input onChange={handleFileChange} ref={register({ required: false })} type="file" style={{ width:'48%'}} className="form-control" name="file" placeholder="Upload project File" id=""/>
                         </div>
                         <div className="form-group text-left">
-                            <button type="submit" className="btn main-btn" style={{textTransform: 'uppercase'}}>Send</button>
+                            <button type="submit" className="btn btn-primary mt-3 main-btn" style={{textTransform: 'uppercase'}}>Send</button>
                         </div>
                     </form>
                 </div>                

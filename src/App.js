@@ -12,6 +12,7 @@ import ServiceDetails from './components/Dashboard/ServiceDetails/ServiceDetails
 import AddService from './components/Dashboard/AddService/AddService';
 import MakeAdmin from './components/Dashboard/MakeAdmin/MakeAdmin';
 import NotFound from "./components/NotFound/NotFound";
+import ManageService from "./components/Dashboard/ManageService/ManageService";
 export const UserContext = createContext();
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -31,26 +32,29 @@ function App() {
         <Route path="/login">
           <Login></Login>
         </Route>
-        <Route path="/orderList">
+        <PrivateRoute path="/orderList">
           <Service></Service>
-        </Route>
-        <Route path="/orderDetails">
+        </PrivateRoute>
+        <PrivateRoute path="/orderDetails">
           <ServiceDetails></ServiceDetails>
-        </Route>        
-        <Route path="/addservice">
+        </PrivateRoute>        
+        <PrivateRoute path="/addservice">
           <AddService></AddService>
-        </Route>
-        <Route path="/makeadmin">
+        </PrivateRoute>
+        <PrivateRoute path="/makeadmin">
           <MakeAdmin></MakeAdmin>
-        </Route>
-        <Route path="/review">
+        </PrivateRoute>
+        <PrivateRoute path="/review">
           <Review></Review>
-        </Route>
+        </PrivateRoute>
         <PrivateRoute path="/order/:name">
           <Order></Order>
         </PrivateRoute>
         <PrivateRoute path="/dashboard">
           <Order></Order>
+        </PrivateRoute>
+        <PrivateRoute path="/manageService">
+          <ManageService></ManageService>
         </PrivateRoute>
         <Route exact path="/">
           <Home></Home>

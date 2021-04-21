@@ -66,10 +66,9 @@ const Navbar = () => {
                   About us
                 </Link>
               </li>
-
               <li className="nav-item">
                 {name ? (
-                  <h5 style={{ marginLeft: "20px" }}>{name}</h5>
+                  <h5 style={{ marginLeft: "20px",color:'white' }}>{name}</h5>
                 ) : (
                   <Link
                     style={{

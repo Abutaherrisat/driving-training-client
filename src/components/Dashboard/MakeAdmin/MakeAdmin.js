@@ -35,7 +35,7 @@ const MakeAdmin = () => {
                             {errors.email && <span className="text-danger">This field is required</span>}
                         </div>
                         <div className="form-group text-right">
-                            <button type="submit" className="btn main-btn" style={{textTransform: 'uppercase'}}>Submit</button>
+                            <button type="submit" className="btn btn-primary main-btn mt-3" style={{textTransform: 'uppercase'}}>Save</button>
                         </div>
                     </form>
                 </div>                

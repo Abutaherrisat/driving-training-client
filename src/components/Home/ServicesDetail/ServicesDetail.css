@@ -1,0 +1,6 @@
+.service-item:hover {
+    background-color:yellow;
+}
+.service-item{
+    transition: 2s;
+}

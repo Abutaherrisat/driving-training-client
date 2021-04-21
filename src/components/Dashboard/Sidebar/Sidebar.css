@@ -6,10 +6,16 @@
 .sidebar li{
     margin-bottom: 2em;
 }
+span{
+    color: white;
+}
 .sidebar li:hover span{
     display: inline-block;
     transform: translate(5px);
 }
 .sidebar svg{
     margin-right: 5px;
+}
+.icon{
+    color: white;
 }
