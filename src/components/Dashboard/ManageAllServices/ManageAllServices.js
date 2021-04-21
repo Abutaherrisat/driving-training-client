@@ -10,19 +10,21 @@ const ManageAllServices = (props) => {
             .then(res => res.json())
             .then(result => {
                 if (result) {
-                    e.target.parentNode.parentNode.style.display = 'none';
+                    e.target.parentNode.parentNode.parentNode.parentNode.style.display = 'none';
                 }
             })
     }
     return (
 
         <div className="manage-product mb-3">
-            
-                <td style={{paddingRight:'10px'}}>{title}</td>
-                <td style={{paddingRight:'10px'}} className="text-justify">{description}</td>
+
+            <tr>
+                <td style={{ paddingRight: '10px' }}>{title}</td>
+                <td style={{ paddingRight: '10px' }} className="text-justify">{description}</td>
                 <td><p>
                     <button className="btn btn-danger" onClick={(e) => deleteService(e, _id)}><FontAwesomeIcon icon={faTrashAlt} /> Delete</button>
                 </p></td>
+            </tr>
         </div>
     );
 };

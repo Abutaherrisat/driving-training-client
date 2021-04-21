@@ -32,7 +32,7 @@ const ManageService = () => {
                             </thead>
                             <tbody >
                                 {
-                                    services.map(pd => <tr><ManageAllServices key={pd._id} pd={pd}></ManageAllServices></tr>)
+                                    services.map(pd => <ManageAllServices key={pd._id} pd={pd}></ManageAllServices>)
 
                                 }
                             </tbody>
