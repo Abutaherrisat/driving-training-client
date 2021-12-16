@@ -1,0 +1,48 @@
+[debug] [2021-12-16T14:08:01.015Z] ----------------------------------------------------------------------
+[debug] [2021-12-16T14:08:01.019Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\iftek\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-12-16T14:08:01.020Z] CLI Version:   9.22.0
+[debug] [2021-12-16T14:08:01.020Z] Platform:      win32
+[debug] [2021-12-16T14:08:01.020Z] Node Version:  v14.17.1
+[debug] [2021-12-16T14:08:01.021Z] Time:          Thu Dec 16 2021 20:08:01 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-12-16T14:08:01.021Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-12-16T14:08:01.138Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-12-16T14:08:01.139Z] > authorizing via signed-in user (abutaherrisat@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\projects\driving-training-client
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using driving-training-c9c42. 
+[debug] [2021-12-16T14:09:36.649Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/driving-training-c9c42 [none]
+[debug] [2021-12-16T14:09:37.361Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/driving-training-c9c42 403
+[debug] [2021-12-16T14:09:37.362Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/driving-training-c9c42 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-12-16T14:09:37.364Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-12-16T14:09:37.839Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\iftek\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\iftek\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:241:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\iftek\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\iftek\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\iftek\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\iftek\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project driving-training-c9c42. Please make sure the project exists and your account has permission to access it.
